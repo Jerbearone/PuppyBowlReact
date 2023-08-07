@@ -1,7 +1,8 @@
 #root {
   max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -39,4 +40,53 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.puppyImage{
+  width: 50vw;
+  border-radius: 2rem;
+  
+}
+
+.puppyInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-style: dotted;
+  border-width: .4rem;
+  background-color: lightblue;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.navLink{
+  
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  
+}
+
+.navLinkDiv{
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-bottom: 1rem;
+  top: 0;
+  background-color: aquamarine;
+}
+
+.newPlayerFormList{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.playersButtons{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
