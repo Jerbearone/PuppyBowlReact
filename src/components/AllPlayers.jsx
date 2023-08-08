@@ -1,5 +1,6 @@
 import { getAllPuppies, deletePuppy } from "../api/fetchFunctions"
 import { useState, useEffect } from 'react'
+import SearchBar from "./SearchBar";
 
 import '../App.css';
 import { useNavigate } from "react-router-dom";
@@ -7,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function AllPlayers() {
     const [players, setPlayers] = useState([]);
+    const [playersBackup, setPlayersBackup] = useState([])
     const navigate = useNavigate();
     
     console.log(players);
@@ -15,12 +17,14 @@ export default function AllPlayers() {
             const puppers = await getAllPuppies();
             console.log(puppers);
             setPlayers(puppers);
+            setPlayersBackup(puppers);
         }
         getPuppers();
-    }, [])
+    }, []);
 
     return (
         <div>
+            <SearchBar players={players} setPlayers={setPlayers} playersBackup={playersBackup}></SearchBar>
            {
             players.map((player) => {
                 return  (
