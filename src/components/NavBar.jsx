@@ -7,7 +7,6 @@ export default function NavBar() {
             <div className="navLinkDiv">
                 <Link className="navLink" to={"/"}>Home</Link>
                 <Link className="navLink" to={"/newPlayer"}>Add to Team</Link>
-            
             </div>
             
 

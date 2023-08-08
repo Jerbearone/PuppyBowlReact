@@ -52,31 +52,20 @@ export default function NewPlayerForm() {
     }
 
     return (
-        <div>
+        <div className="newPlayerRoot">
             <h1>Add new Player</h1>
-            <form onSubmit={submitForm}>
-                <ul className="newPlayerFormList">
-                    <li>
-                        <label>Name:</label>
-                        <input onChange={onNameChanged}></input>
-
-                    </li>
-                    <li>
-                        <label>Breed:</label>
-                        <input onChange={onBreedChanged}></input>
-
-                    </li>
-
-                    <li>
-                        <label>Image Url: </label>
-                        <input onChange={onImageUrlChanged}></input>
-
-                    </li>
-                    <li>
-                        <button type="submit">Submit</button>
-                    </li>
-                </ul>   
+            <form className="newPlayerFormList" onSubmit={submitForm}>
+                <label>Name:
+                    <input onChange={onNameChanged}></input>
+                </label>
+                <label>Breed:
+                <input onChange={onBreedChanged}></input>
+                </label>
+                <label>Image Url:
+                    <input onChange={onImageUrlChanged}></input>
+                    </label>
             </form>
+            <button className="playersButtons" type="submit">Submit</button>
             
         </div>
     )

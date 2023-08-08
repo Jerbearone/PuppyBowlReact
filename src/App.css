@@ -1,9 +1,11 @@
 #root {
-  max-width: 1280px;
+  width:60vw;
   min-height: 100vh;
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
+  background-color: white;
+  color: black;
 }
 
 .logo {
@@ -48,6 +50,10 @@
   
 }
 
+.newPlayerRoot{
+  background-color: lightblue;
+}
+
 .puppyInfo{
   display: flex;
   align-items: center;
@@ -61,7 +67,7 @@
 }
 
 .navLink{
-  
+  color: white;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   
@@ -74,24 +80,39 @@
   position: -webkit-sticky;
   margin-bottom: 1rem;
   top: 0;
-  background-color: aquamarine;
+  background-color: #00b4d8;
 }
 
 .newPlayerFormList{
   display: flex;
+  width: 100%;
   flex-direction: column;
-  list-style-type: none;
+  align-items: center;
+  
+}
+
+input{
+  margin-left: .5rem;
+  display: flex;
+  background-color: white;
+  
+}
+label{
+  margin: .2rem;
+  display: flex;
+
 }
 
 .playersButtons{
-  display: flex;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background-color: #00b4d8;
 }
 
 .searchBar{
   margin-bottom: 1rem;
 
 }
+
