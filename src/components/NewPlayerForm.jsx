@@ -63,9 +63,10 @@ export default function NewPlayerForm() {
                 </label>
                 <label>Image Url:
                     <input onChange={onImageUrlChanged}></input>
-                    </label>
+                </label>
+                <button className="playersButtons" type="submit">Submit</button>
             </form>
-            <button className="playersButtons" type="submit">Submit</button>
+            
             
         </div>
     )
